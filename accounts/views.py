@@ -9,7 +9,7 @@ from rest_framework.response import Response
 from rest_framework import authentication,permissions
 # Create your views here.
 class TrainerSignUpView(CreateAPIView):
-    serializer_class=TrainerSerializer
+    serializer_class=TrainerSerializer   #post 
     
 
 class TrainerRetreiveUpdateView(APIView):
