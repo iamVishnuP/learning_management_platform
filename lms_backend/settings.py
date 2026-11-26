@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'course_management',
     'module_management',
+    'lesson_management',
+    
 
     
 

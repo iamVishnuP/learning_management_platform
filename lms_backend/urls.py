@@ -23,6 +23,8 @@ from course_management.views import CourseCreateListView,CourseRetreiveUpdateDel
 
 from module_management.views import ModuleCreateView,ModuleRetreiveUpdateDeleteView
 
+from lesson_management.views import LessonCreateView,LessonRetreiveUpdateDeleteView
+
 from rest_framework.authtoken.views import ObtainAuthToken
 
 urlpatterns = [
@@ -42,6 +44,12 @@ urlpatterns = [
     #modules
     path('courses/<int:pk>/modules/',ModuleCreateView.as_view()),
     path('modules/<int:pk>/',ModuleRetreiveUpdateDeleteView.as_view()),
+
+    #lessons
+
+    path('modules/<int:pk>/lessons/',LessonCreateView.as_view()),
+    path('lessons/<int:pk>/',LessonRetreiveUpdateDeleteView.as_view()),
+
 
 
 

@@ -26,6 +26,10 @@ class ModuleCreateView(CreateAPIView):
 
         return serializer.save(course=course_object)
 
+
+
+
+
 class ModuleRetreiveUpdateDeleteView(RetrieveAPIView,UpdateAPIView,DestroyAPIView):
     serializer_class=ModuleSerializer
     authentication_classes=[authentication.TokenAuthentication]
